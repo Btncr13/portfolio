@@ -3302,6 +3302,18 @@ ul.feature-icons li i:hover::after {
 				display: block;
 				width: 100%;
 			}
+		
+		@media screen and (max-width: 480px) {
+ 			#header {
+    				position: static;
+    				width: 100%;
+    				height: auto;
+  			}
+  			#wrapper {
+    				margin-left: 0;
+  			}
+		}
+		
 
 		/* Button */
 
