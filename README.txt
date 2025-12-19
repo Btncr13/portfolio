@@ -1,34 +1,38 @@
-Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🚀 Portfolio Personal - César
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Responsive](https://img.shields.io/badge/Responsive-Mobile-orange?style=for-the-badge)
 
-Just a super simple single-page responsive template built for personal sites and portfolios
-(although it'd definitely work for other stuff too). Includes a contact form, pre-styled
-elements, and Sass sources.
+Web personal diseñada para mostrar mi transición profesional del sector logístico al desarrollo de software. Funciona como punto central para presentar mis proyectos, habilidades técnicas y experiencia.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+🔗 **Ver Online:** (https://btncr13.github.io/portfolio/)
 
-(* = Not included)
+---
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+## 🎨 Diseño y Estructura
 
-AJ
-aj@lkn.io | @ajlkn
+El proyecto sigue una arquitectura limpia separando estructura y diseño:
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+* **HTML5 Semántico:** Uso de etiquetas adecuadas (`<section>`, `<article>`, `<header>`) para mejorar el SEO y la accesibilidad.
+* **CSS3 Moderno:**
+    * Uso de **Flexbox** para la alineación de las tarjetas de proyectos.
+    * Diseño **Responsive** adaptable a móviles y escritorio.
+    * Variables de color para mantener la coherencia visual (Naranja Corporativo).
+* **Font Awesome:** Integración de iconos para mejorar la interfaz de usuario (UI).
 
+---
 
-Credits:
+## 📂 Proyectos Destacados
 
-	Demo Images:
-		Unsplash (unsplash.com)
+El portfolio incluye una sección dinámica de proyectos que enlaza a mis repositorios principales:
 
-	Icons:
-		Font Awesome (fontawesome.io)
+1.  **Tienda Drop 5 (E-commerce):** Sistema completo PHP/MySQL con gestión de stock.
+2.  **Wordle Logic (Java):** Algoritmo de juego en consola enfocado en lógica backend.
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+---
+
+## 📬 Contacto
+
+* 📧 [Email](mailto:betancor13@gmail.com)
+* 💼 [LinkedIn](https://www.linkedin.com/in/cesarbetancorcano/)
