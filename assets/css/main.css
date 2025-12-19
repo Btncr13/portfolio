@@ -1,383 +1,554 @@
 /* RESET */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* BASE GLOBAL PARA TODO EL DOCUMENTO */
 
 body {
-  	font-family: Arial, sans-serif;		/* tipografía general para toda la web */
-  	font-size: 16px;					/* tamaño base del texto */
-  	line-height: 1.6;					/* altura de línea para legibilidad */
-  	color: #fff;					   /* color de texto principal en blanco */
-  	background-color: #1f1f1f; 	   /* fondo oscuro uniforme */
-	text-align: justify; 				/* fuerza que el texto ocupe toda la línea */
+  font-family: Arial, sans-serif;
+  /* tipografía general para toda la web */
+  font-size: 16px;
+  /* tamaño base del texto */
+  line-height: 1.6;
+  /* altura de línea para legibilidad */
+  color: #fff;
+  /* color de texto principal en blanco */
+  background-color: #1f1f1f;
+  /* fondo oscuro uniforme */
+  text-align: justify;
+  /* fuerza que el texto ocupe toda la línea */
 
 }
 
 h1 {
- 	font-size: 2.5em;					/* títulos principales grandes */
-  	margin-bottom: 0.5em;				/* espacio debajo del título */
+  font-size: 2.5em;
+  /* títulos principales grandes */
+  margin-bottom: 0.5em;
+  /* espacio debajo del título */
 }
 
 h2 {
-  	font-size: 2em;						/* subtítulos */
-  	margin-bottom: 0.5em;				/* espacio debajo */
+  font-size: 2em;
+  /* subtítulos */
+  margin-bottom: 0.5em;
+  /* espacio debajo */
 }
 
 h3 {
-  	font-size: 1.5em;					/* subtítulo de tercer nivel */
-  	margin-bottom: 0.5em;				/* espacio debajo */
-    color: #ca884a;				   /* color naranja corporativo */
-	justify-self: center;
+  font-size: 1.5em;
+  /* subtítulo de tercer nivel */
+  margin-bottom: 0.5em;
+  /* espacio debajo */
+  color: #ca884a;
+  /* color naranja corporativo */
+  justify-self: center;
 }
 
 p {
-  	font-size: 1em;						/* tamaño estándar de párrafo */
-  	max-width: 800px;					/* limita el ancho para que no sea demasiado largo */
-  	margin: 0 auto 1em auto;			/* centra el párrafo horizontalmente y añade margen inferior */
+  font-size: 1em;
+  /* tamaño estándar de párrafo */
+  max-width: 800px;
+  /* limita el ancho para que no sea demasiado largo */
+  margin: 0 auto 1em auto;
+  /* centra el párrafo horizontalmente y añade margen inferior */
 }
 
 a {
-  	text-decoration: none;              /* quita subrayado de los enlaces */
-  	color: #ca884a;                   /* color naranja corporativo */
-  	transition: color 0.3s;				/* transición suave al pasar el ratón */
+  text-decoration: none;
+  /* quita subrayado de los enlaces */
+  color: #ca884a;
+  /* color naranja corporativo */
+  transition: color 0.3s;
+  /* transición suave al pasar el ratón */
 }
 
 a:hover {
-  	color: #b86f2c;				   /* color más oscuro en hover */
+  color: #b86f2c;
+  /* color más oscuro en hover */
 }
 
 /* HEADER */
 #header {
-	position: fixed;					/* el header se queda fijo en la parte superior al hacer scroll */
-	top: 0;								/* anclado arriba */
-	left: 0;							/* anclado a la izquierda */
-	width: 100%;						/* ocupa todo el ancho */
-	background-color: #1a1a1b;		   /* color de fondo oscuro elegante */
-	color: #fff;					   /* texto blanco dentro del header */
-	padding: 1em;						/* espacio interior */
-	z-index: 1000;						/* para que esté por encima de otros elementos */
-	display: flex;   					/* organiza el logo y el nav en fila horizontal*/
-	justify-content: center; 			/* separa logo a la izquierda y menú a la derecha */
-	gap: 22em; 							/* separa logo y nav, ajústalo según tu gusto */
-	align-items: center; 				/* alinea verticalmente el contenido del header */
+  position: fixed;
+  /* el header se queda fijo en la parte superior al hacer scroll */
+  top: 0;
+  /* anclado arriba */
+  left: 0;
+  /* anclado a la izquierda */
+  width: 100%;
+  /* ocupa todo el ancho */
+  background-color: #1a1a1b;
+  /* color de fondo oscuro elegante */
+  color: #fff;
+  /* texto blanco dentro del header */
+  padding: 1em;
+  /* espacio interior */
+  z-index: 1000;
+  /* para que esté por encima de otros elementos */
+  display: flex;
+  /* organiza el logo y el nav en fila horizontal*/
+  justify-content: center;
+  /* separa logo a la izquierda y menú a la derecha */
+  gap: 22em;
+  /* separa logo y nav, ajústalo según tu gusto */
+  align-items: center;
+  /* alinea verticalmente el contenido del header */
 }
 
 #header .logo {
-	font-size: 1.3em; 					/* tamaño del texto del logo (tu nombre) */
-	font-weight: bold; 					/* lo hace en negrita */
-	color: #ca884a;				   /* color naranja personalizado */
+  font-size: 1.3em;
+  /* tamaño del texto del logo (tu nombre) */
+  font-weight: bold;
+  /* lo hace en negrita */
+  color: #ca884a;
+  /* color naranja personalizado */
 }
 
 #header .logo span {
-  	font-weight: normal;				/* quita la negrita */
-  	font-size: 1em;    					/* opcional: para poner mas pequeño o grande que el nombre */
-  	margin-left: 0.4em;					/* separa un poco del nombre */
-  	color: #ddd;         			   /* mismo color, pero puedes cambiarlo si quieres */
+  font-weight: normal;
+  /* quita la negrita */
+  font-size: 1em;
+  /* opcional: para poner mas pequeño o grande que el nombre */
+  margin-left: 0.4em;
+  /* separa un poco del nombre */
+  color: #ddd;
+  /* mismo color, pero puedes cambiarlo si quieres */
 }
 
 
 /* MENÚ DE NAVEGACIÓN */
 #nav ul {
-	list-style: none;					/* quita puntos de la lista */
-	display: flex;						/* muestra los elementos en fila */
-	justify-content: center;			/* centra el menú horizontalmente */
-	gap: 6.5em;							/* espacio entre los elementos del menú */
-	margin: 0;							/* elimina margen por defecto */
-	padding: 0;							/* elimina padding por defecto */
+  list-style: none;
+  /* quita puntos de la lista */
+  display: flex;
+  /* muestra los elementos en fila */
+  justify-content: center;
+  /* centra el menú horizontalmente */
+  gap: 6.5em;
+  /* espacio entre los elementos del menú */
+  margin: 0;
+  /* elimina margen por defecto */
+  padding: 0;
+  /* elimina padding por defecto */
 }
 
 /* ENLACES DEL MENÚ */
 #nav ul li a {
-	color: #fff;					   /* enlaces en blanco */
-	text-decoration: none;				/* sin subrayado */
-	font-weight: bold;					/* negrita */
-	transition: color 0.3s;				/* transición suave al cambiar de color */
+  color: #fff;
+  /* enlaces en blanco */
+  text-decoration: none;
+  /* sin subrayado */
+  font-weight: bold;
+  /* negrita */
+  transition: color 0.3s;
+  /* transición suave al cambiar de color */
 }
 
 /* ENLACES AL PASAR EL RATÓN O ACTIVOS */
 #nav ul li a:hover {
-	color: #ca884a;				   /* color naranja al pasar el ratón o activo */
+  color: #ca884a;
+  /* color naranja al pasar el ratón o activo */
 
 }
 
 #nav ul li a.active {
-	color: #ca884a;				   /* color naranja al pasar el ratón o activo */
-	text-decoration: underline;			/* sin subrayado */
+  color: #ca884a;
+  /* color naranja al pasar el ratón o activo */
+  text-decoration: underline;
+  /* sin subrayado */
 }
 
 /* MAIN */
 main {
-  	margin-top: 80px;               	/* para no tapar el contenido con el header */
-  	max-width: 1200px;           		/* límite de ancho para mejorar legibilidad. 1200 es un tamaño estandar */
-  	margin-left: auto;              	/* centrar horizontalmente */
-  	margin-right: auto;            		/* centrar horizontalmente */
-  	padding: 0 1em;                		/* algo de espacio lateral en pantallas pequeñas */
-	background-size: cover;
-  	background-position: center;
-	min-height: 100vh; 					/* altura mínima del viewport */
+  margin-top: 80px;
+  /* para no tapar el contenido con el header */
+  max-width: 1200px;
+  /* límite de ancho para mejorar legibilidad. 1200 es un tamaño estandar */
+  margin-left: auto;
+  /* centrar horizontalmente */
+  margin-right: auto;
+  /* centrar horizontalmente */
+  padding: 0 1em;
+  /* algo de espacio lateral en pantallas pequeñas */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* altura mínima del viewport */
 }
 
 #logo {
-	text-align:center;              	/* centrado del texto */
-	padding: 5em 2em;                	/* espacio arriba/abajo y en laterales */
-	background-color: #1a1a1b;		   /* fondo oscuro coherente con el header */
- 	border-radius: 15px;
-	box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra elegante para dar profundidad */
-	max-width: 900px;         			/* Limita el ancho para que no se estire demasiado */
-	margin: 2em auto;         			/* Centra la tarjeta en la pantalla */
-}
-#logo h1 {
-  	font-size: 2em;                   	/* tamaño del título */
-  	margin-bottom: 0.5em;             	/* espacio debajo */
-	
+  text-align: center;
+  /* centrado del texto */
+  padding: 5em 2em;
+  /* espacio arriba/abajo y en laterales */
+  background-color: #1a1a1b;
+  /* fondo oscuro coherente con el header */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  /* Sombra elegante para dar profundidad */
+  max-width: 900px;
+  /* Limita el ancho para que no se estire demasiado */
+  margin: 2em auto;
+  /* Centra la tarjeta en la pantalla */
 }
 
-#logo h1 strong{
-	color: #ca884a;	 		       /* texto en blanco */
+#logo h1 {
+  font-size: 2em;
+  /* tamaño del título */
+  margin-bottom: 0.5em;
+  /* espacio debajo */
+
+}
+
+#logo h1 strong {
+  color: #ca884a;
+  /* texto en blanco */
 }
 
 #logo p {
-  	font-size: 1.1em;
-    color: #b0b0b0;           /* Gris suave para no cansar la vista */
-    max-width: 700px;         /* Que el texto no sea eterno de leer */
-    margin: 1em auto 2em auto; /* Margen para separarlo de los iconos */
-    line-height: 1.8;         /* Más espacio entre líneas = Más elegancia */
+  font-size: 1.1em;
+  color: #b0b0b0;
+  /* Gris suave para no cansar la vista */
+  max-width: 700px;
+  /* Que el texto no sea eterno de leer */
+  margin: 1em auto 2em auto;
+  /* Margen para separarlo de los iconos */
+  line-height: 1.8;
+  /* Más espacio entre líneas = Más elegancia */
 }
 
 .tecnologias {
-    display: flex;                		/* organiza los iconos en fila horizontal */
-  	justify-content: center;      		/* centra el grupo de iconos en horizontal */
-  	gap: 1em;                     		/* espacio entre cada icono */
-  	margin-top: 1em;             	    /* separación con el contenido superior */
-  	font-size: 4em;              	    /* tamaño grande para los iconos */
-  	color: #ca884a;              	   /* color inicial de los iconos (en tu caso naranja) */
-}		
+  display: flex;
+  /* organiza los iconos en fila horizontal */
+  justify-content: center;
+  /* centra el grupo de iconos en horizontal */
+  gap: 1em;
+  /* espacio entre cada icono */
+  margin-top: 1em;
+  /* separación con el contenido superior */
+  font-size: 4em;
+  /* tamaño grande para los iconos */
+  color: #ca884a;
+  /* color inicial de los iconos (en tu caso naranja) */
+}
 
 .tecnologias i:hover {
-  	transform: scale(1.5);
-  	transition: 0.3s;
+  transform: scale(1.5);
+  transition: 0.3s;
 }
 
 .tecnologias i {
- 	color: #ffffff;				   /* base: todos en blanco */
-  	transition: 0.3s;
+  color: #ffffff;
+  /* base: todos en blanco */
+  transition: 0.3s;
 }
 
 .tecnologias i:hover[data-tooltip="Java"] {
-  	color: #007396;				   /* Java azul */
+  color: #007396;
+  /* Java azul */
 }
 
 .tecnologias i:hover[data-tooltip="HTML5"] {
-  	color: #e34c26;				   /* HTML naranja */
+  color: #e34c26;
+  /* HTML naranja */
 }
 
 .tecnologias i:hover[data-tooltip="CSS3"] {
-  	color: #264de4;				   /* CSS azul */
+  color: #264de4;
+  /* CSS azul */
 }
 
 .tecnologias i:hover[data-tooltip="JavaScript"] {
-  	color: #f0db4f;				   /* JS amarillo */
+  color: #f0db4f;
+  /* JS amarillo */
 }
 
 .tecnologias i:hover[data-tooltip="MySQL"] {
-  	color: #00758f;
+  color: #00758f;
 }
 
 .tecnologias i:hover[data-tooltip="GitHub"] {
-  	color: #6e5494;				   /* GitHub morado-grisáceo */
+  color: #6e5494;
+  /* GitHub morado-grisáceo */
 }
 
 .tecnologias i:hover[data-tooltip="php"] {
-  	color: #777bb3;
+  color: #777bb3;
 }
 
 
 .tecnologias i::after {
-  	content: attr(data-tooltip);		/* coge el texto del data-tooltip */
-  	position: absolute;					/* posición absoluta respecto al icono */
-  	bottom: -2em;						/* aparece debajo del icono */
-	left: 50%;							/* centrado horizontalmente */
-	transform: translateX(-50%);		/* corrige centrado horizontal exacto */
-	background-color: #ca884a;		   /* fondo oscuro del tooltip */
-  	color: #1f1f1f;				   /* texto blanco */
-  	font-size: 0.2em;					/* tamaño pequeñito del tooltip */
-  	padding: 0.2em 0.5em;				/* espacio interno del tooltip */
-  	border-radius: 0.3em;				/* bordes redondeados */
-  	white-space: nowrap;				/* que no se parta en varias líneas */
-  	opacity: 0;							/* oculto al inicio */
-  	pointer-events: none;				/* no bloquea clicks ni hovers */
-  	transition: opacity 0.5s;			/* aparición suave */
+  content: attr(data-tooltip);
+  /* coge el texto del data-tooltip */
+  position: absolute;
+  /* posición absoluta respecto al icono */
+  bottom: -2em;
+  /* aparece debajo del icono */
+  left: 50%;
+  /* centrado horizontalmente */
+  transform: translateX(-50%);
+  /* corrige centrado horizontal exacto */
+  background-color: #ca884a;
+  /* fondo oscuro del tooltip */
+  color: #1f1f1f;
+  /* texto blanco */
+  font-size: 0.2em;
+  /* tamaño pequeñito del tooltip */
+  padding: 0.2em 0.5em;
+  /* espacio interno del tooltip */
+  border-radius: 0.3em;
+  /* bordes redondeados */
+  white-space: nowrap;
+  /* que no se parta en varias líneas */
+  opacity: 0;
+  /* oculto al inicio */
+  pointer-events: none;
+  /* no bloquea clicks ni hovers */
+  transition: opacity 0.5s;
+  /* aparición suave */
 }
 
 .tecnologias i:hover::after {
-  	opacity: 1;							/* muestra el tooltip al pasar el ratón */
+  opacity: 1;
+  /* muestra el tooltip al pasar el ratón */
 }
 
 /* SECCION SOBREMI */
 #sobremi {
-	padding: 8em 1em;                	/* espacio arriba/abajo y en laterales */
+  padding: 8em 1em;
+  /* espacio arriba/abajo y en laterales */
 }
 
 /* SECCIÓN PROYECTOS */
 
 #proyectos {
-  	background-color: #1a1a1b;		   /* fondo oscuro coherente con el header */
-  	color: #fff;               	   /* texto en blanco */
-  	padding: 4em 1em;          			/* espacio arriba/abajo y algo de margen lateral */
-	border-radius: 33px;
+  background-color: #1a1a1b;
+  /* fondo oscuro coherente con el header */
+  color: #fff;
+  /* texto en blanco */
+  padding: 4em 1em;
+  /* espacio arriba/abajo y algo de margen lateral */
+  border-radius: 33px;
 
 
 
 }
 
 #proyectos .features {
-  	display: flex;             			/* activa flexbox para los artículos de proyecto */
-  	flex-wrap: wrap;           			/* permite que pasen a otra línea si no caben */
-  	gap: 5em;                  			/* separación entre los proyectos */
-  	margin-top: 2em;          			/* espacio arriba respecto al texto introductorio */
-	justify-content: center;       		/* centra horizontalmente */
+  display: flex;
+  /* activa flexbox para los artículos de proyecto */
+  flex-wrap: wrap;
+  /* permite que pasen a otra línea si no caben */
+  gap: 5em;
+  /* separación entre los proyectos */
+  margin-top: 2em;
+  /* espacio arriba respecto al texto introductorio */
+  justify-content: center;
+  /* centra horizontalmente */
 }
 
 #proyectos article {
-  	background-color: #2c2c2c;		   /* fondo gris oscuro para cada tarjeta */
-  	border-radius: 15px;				/* esquinas redondeadas */
-  	overflow: hidden;					/* oculta bordes de imágenes si se salen */
-  	width: 300px;						/* ancho fijo de cada tarjeta de proyecto */
-  	text-align: center;					/* texto dentro alineado a la izquierda */
-	margin-bottom: 2em;         		/* añade espacio vertical entre tarjetas */
+  background-color: #2c2c2c;
+  /* fondo gris oscuro para cada tarjeta */
+  border-radius: 15px;
+  /* esquinas redondeadas */
+  overflow: hidden;
+  /* oculta bordes de imágenes si se salen */
+  width: 300px;
+  /* ancho fijo de cada tarjeta de proyecto */
+  text-align: center;
+  /* texto dentro alineado a la izquierda */
+  margin-bottom: 2em;
+  /* añade espacio vertical entre tarjetas */
 }
 
 #proyectos article img {
-  	width: 100%;               			/* imagen ocupa todo el ancho de la tarjeta */
-  	height: auto;              			/* proporción de aspecto correcta */
- 	display: block;            			/* evita espacios blancos debajo */
-	border-radius: 15px;				/* esquinas redondeadas */
+  width: 100%;
+  /* imagen ocupa todo el ancho de la tarjeta */
+  height: auto;
+  /* proporción de aspecto correcta */
+  display: block;
+  /* evita espacios blancos debajo */
+  border-radius: 15px;
+  /* esquinas redondeadas */
 }
 
 #proyectos article h4 {
-  	margin: 0.5em;             			/* margen alrededor del título */
- 	color: #ca884a;            	   /* naranja corporativo */
+  margin: 0.5em;
+  /* margen alrededor del título */
+  color: #ca884a;
+  /* naranja corporativo */
 }
 
 #proyectos article p {
-  	margin: 0.5em;             			/* margen alrededor del párrafo */
-  	font-size: 0.9em;          			/* tamaño de texto más discreto */
-  	line-height: 1.4;          			/* separación entre líneas cómoda */
+  margin: 0.5em;
+  /* margen alrededor del párrafo */
+  font-size: 0.9em;
+  /* tamaño de texto más discreto */
+  line-height: 1.4;
+  /* separación entre líneas cómoda */
 }
 
 #proyectos article a {
-  	display: inline-block;     			/* estilo de botón simple */
-  	margin: 0.5em;             			/* margen alrededor del enlace */
-  	color: #ca884a;				   /* naranja corporativo */
-  	text-decoration: underline;			/* subrayado para parecer un enlace */
-  	transition: color 0.3s;    			/* transición suave al pasar el ratón */
+  display: inline-block;
+  /* estilo de botón simple */
+  margin: 0.5em;
+  /* margen alrededor del enlace */
+  color: #ca884a;
+  /* naranja corporativo */
+  text-decoration: underline;
+  /* subrayado para parecer un enlace */
+  transition: color 0.3s;
+  /* transición suave al pasar el ratón */
 }
 
 #proyectos article a:hover {
-  	color: #b86f2c;				   /* un tono más oscuro al pasar el ratón */
+  color: #b86f2c;
+  /* un tono más oscuro al pasar el ratón */
 }
 
 .features article {
-    transition: box-shadow 0.3s ease;
-	transition: transform 0.6s ease;	/* transición suave */
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.6s ease;
+  /* transición suave */
 }
 
 .features article:hover {
-  	transform: scale(1.03);           	/* zoom del 5% */
-    box-shadow: 0 0 5px rgba(202, 136, 74, 1.6);
+  transform: scale(1.03);
+  /* zoom del 5% */
+  box-shadow: 0 0 5px rgba(202, 136, 74, 1.6);
 }
 
 /*CONTACTO*/
 #contacto {
-	color: #fff;					   /* texto blanco */
-	padding: 4em 1em;					/* espacio superior e inferior + algo de margen lateral */
-  	border-radius: 33px;			   	/* bordes redondeados elegantes */
+  color: #fff;
+  /* texto blanco */
+  padding: 4em 1em;
+  /* espacio superior e inferior + algo de margen lateral */
+  border-radius: 33px;
+  /* bordes redondeados elegantes */
 }
 
 #contacto p {
-	text-align: center;					/* centrado horizontalmente */
-	max-width: 800px;					/* limita la longitud para legibilidad */
-	margin: 0 auto 2em auto;			/* centrado + margen inferior */
+  text-align: center;
+  /* centrado horizontalmente */
+  max-width: 800px;
+  /* limita la longitud para legibilidad */
+  margin: 0 auto 2em auto;
+  /* centrado + margen inferior */
 }
 
 #contacto form {
-	max-width: 600px;					/* no hacerlo tan ancho para estética */
-	margin: 0 auto;						/* centrado horizontalmente */
+  max-width: 600px;
+  /* no hacerlo tan ancho para estética */
+  margin: 0 auto;
+  /* centrado horizontalmente */
 }
 
 #contacto input,
 #contacto textarea {
-	width: 100%;						/* que ocupe todo el ancho disponible */
-	padding: 0.8em;						/* espacio interior cómodo */
-	border: 0;							/* sin bordes del navegador por defecto */
-	border-radius: 5px;					/* bordes redondeados */
-	margin-bottom: 1em;					/* separación entre campos */
-	background-color: #2c2c2c;		   /* fondo gris oscuro coherente */
-	color: #fff;					   /* texto blanco */
-	font-family: inherit;				/* hereda la fuente del body */
-    border: 1px solid #444;		   /* borde fino gris oscuro */
+  width: 100%;
+  /* que ocupe todo el ancho disponible */
+  padding: 0.8em;
+  /* espacio interior cómodo */
+  border: 0;
+  /* sin bordes del navegador por defecto */
+  border-radius: 5px;
+  /* bordes redondeados */
+  margin-bottom: 1em;
+  /* separación entre campos */
+  background-color: #2c2c2c;
+  /* fondo gris oscuro coherente */
+  color: #fff;
+  /* texto blanco */
+  font-family: inherit;
+  /* hereda la fuente del body */
+  border: 1px solid #444;
+  /* borde fino gris oscuro */
 
 
 }
 
 #contacto input:focus,
 #contacto textarea:focus {
-	outline: none;						/* quita el contorno azul del navegador */
-	border: 2px solid #ca884a;		   /* borde naranja al enfocar */
+  outline: none;
+  /* quita el contorno azul del navegador */
+  border: 2px solid #ca884a;
+  /* borde naranja al enfocar */
 }
 
 #contacto .actions {
-	list-style: none;      				/* quita los puntos de la lista */
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  /* quita los puntos de la lista */
+  padding: 0;
+  margin: 0;
 }
 
 #contacto .actions input[type="submit"],
 #contacto .actions input[type="reset"] {
-	background-color: #ca884a;		   /* color corporativo de fondo */
-	color: #1f1f1f;				   /* texto oscuro para contraste */
-	border: none;						/* sin borde */
-	padding: 0.8em 1.5em;				/* tamaño del botón cómodo */
-	border-radius: 5px;					/* esquinas redondeadas */
-	cursor: pointer;					/* cambia cursor a mano */
-	transition: background-color 0.3s;  /* transición suave al pasar ratón */
+  background-color: #ca884a;
+  /* color corporativo de fondo */
+  color: #1f1f1f;
+  /* texto oscuro para contraste */
+  border: none;
+  /* sin borde */
+  padding: 0.8em 1.5em;
+  /* tamaño del botón cómodo */
+  border-radius: 5px;
+  /* esquinas redondeadas */
+  cursor: pointer;
+  /* cambia cursor a mano */
+  transition: background-color 0.3s;
+  /* transición suave al pasar ratón */
 }
 
 #contacto .actions input[type="submit"]:hover,
 #contacto .actions input[type="reset"]:hover {
-	background-color: #b86f2c;		   /* tono más oscuro en hover */
+  background-color: #b86f2c;
+  /* tono más oscuro en hover */
 }
 
 /*FOOTER*/
 #footer {
-	background-color: #1a1a1b;		   /* mismo fondo que el header */
-	color: #fff;					   /* texto blanco */
-	text-align: center;					/* centrado */
-	padding: 2em 1em;					/* espacio interior cómodo */
-	margin-top: 4em;					/* separación del contenido anterior */
+  background-color: #1a1a1b;
+  /* mismo fondo que el header */
+  color: #fff;
+  /* texto blanco */
+  text-align: center;
+  /* centrado */
+  padding: 2em 1em;
+  /* espacio interior cómodo */
+  margin-top: 4em;
+  /* separación del contenido anterior */
 }
 
 #footer .icons {
-	list-style: none;					/* quita puntos de la lista */
-	padding: 0;
-	margin: 0;
-	display: flex;						/* organiza en fila */
-	justify-content: center;			/* centrado horizontal */
-	gap: 2em;							/* separación entre iconos */
+  list-style: none;
+  /* quita puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /* organiza en fila */
+  justify-content: center;
+  /* centrado horizontal */
+  gap: 2em;
+  /* separación entre iconos */
 }
 
 #footer .icons li a {
-	color: #fff;					   /* blanco inicialmente */
-	font-size: 1.5em;					/* tamaño de icono */
-	transition: color 0.3s;
+  color: #fff;
+  /* blanco inicialmente */
+  font-size: 1.5em;
+  /* tamaño de icono */
+  transition: color 0.3s;
 }
 
 #footer .icons li a:hover {
-	color: #ca884a;				   /* naranja al pasar ratón */
+  color: #ca884a;
+  /* naranja al pasar ratón */
 }
 
 /* ============= MEDIA QUERIES ============= */
@@ -385,40 +556,50 @@ main {
 /* Tablet horizontal */
 @media screen and (max-width: 1024px) {
   #header {
-    gap: 10em;   /* reducimos la separación entre logo y menú */
+    gap: 10em;
+    /* reducimos la separación entre logo y menú */
   }
 
   #nav ul {
-    gap: 3em;    /* menos espacio entre enlaces */
+    gap: 3em;
+    /* menos espacio entre enlaces */
   }
 }
 
 /* Tablet vertical y móvil horizontal */
 @media screen and (max-width: 768px) {
   #header {
-    flex-direction: row;           /* sigue en horizontal */
-    gap: 1em;                      /* menos separación */
-    padding: 0.5em;                /* menos padding general */
+    flex-direction: row;
+    /* sigue en horizontal */
+    gap: 1em;
+    /* menos separación */
+    padding: 0.5em;
+    /* menos padding general */
   }
 
   #nav ul {
-    gap: 1em;                      /* enlaces más pegados */
+    gap: 1em;
+    /* enlaces más pegados */
   }
 
   #header .logo {
-    font-size: 1em;                /* logo más pequeño */
+    font-size: 1em;
+    /* logo más pequeño */
   }
 
   #nav ul li a {
-    font-size: 0.9em;              /* enlaces más pequeños */
+    font-size: 0.9em;
+    /* enlaces más pequeños */
   }
 }
 
 /* Móvil pequeño aún más compacto */
 @media screen and (max-width: 480px) {
   #header {
-    flex-direction: row;           /* sigue horizontal */
-    gap: 0.5em;                    /* mínima separación */
+    flex-direction: row;
+    /* sigue horizontal */
+    gap: 0.5em;
+    /* mínima separación */
     padding: 0.3em;
   }
 
@@ -427,7 +608,8 @@ main {
   }
 
   #header .logo {
-    display: none;   /* oculta el logo en móvil pequeño */
+    display: none;
+    /* oculta el logo en móvil pequeño */
   }
 
   #nav ul li a {
@@ -437,38 +619,51 @@ main {
 
 @media screen and (max-width: 768px) {
   #logo {
-    padding: 4em 1em;   /* reduce el padding vertical a la mitad en tablets/móviles */
+    padding: 4em 1em;
+    /* reduce el padding vertical a la mitad en tablets/móviles */
   }
+
   #logo h1 {
-    font-size: 1.5em;   /* hace el título algo más pequeño */
+    font-size: 1.5em;
+    /* hace el título algo más pequeño */
   }
+
   #logo p {
-    font-size: 1em;     /* texto un pelín más pequeño */
+    font-size: 1em;
+    /* texto un pelín más pequeño */
   }
 }
 
 @media screen and (max-width: 480px) {
   #logo {
-    padding: 2em 1em;   /* menos espacio en móvil estrecho */
+    padding: 2em 1em;
+    /* menos espacio en móvil estrecho */
   }
+
   #logo h1 {
     font-size: 1.2em;
   }
+
   #logo p {
     font-size: 0.9em;
   }
 }
+
 @media screen and (max-width: 768px) {
   .tecnologias {
-    font-size: 2.5em;       /* reduce tamaño de los iconos en tablet */
-    flex-wrap: wrap;        /* permite que pasen a varias líneas */
-    gap: 0.5em;             /* menos espacio entre ellos */
+    font-size: 2.5em;
+    /* reduce tamaño de los iconos en tablet */
+    flex-wrap: wrap;
+    /* permite que pasen a varias líneas */
+    gap: 0.5em;
+    /* menos espacio entre ellos */
   }
 }
 
 @media screen and (max-width: 480px) {
   .tecnologias {
-    font-size: 2em;         /* más pequeño aún en móvil */
+    font-size: 2em;
+    /* más pequeño aún en móvil */
     flex-wrap: wrap;
     gap: 0.5em;
   }
@@ -476,23 +671,31 @@ main {
 
 @media screen and (max-width: 768px) {
   #sobremi {
-    padding: 4em 1em;                /* menos padding en tablet */
+    padding: 4em 1em;
+    /* menos padding en tablet */
   }
+
   #sobremi h3 {
-    font-size: 1.3em;                /* subtítulo un poco más pequeño */
+    font-size: 1.3em;
+    /* subtítulo un poco más pequeño */
   }
+
   #sobremi p {
-    font-size: 0.95em;               /* texto más compacto */
+    font-size: 0.95em;
+    /* texto más compacto */
   }
 }
 
 @media screen and (max-width: 480px) {
   #sobremi {
-    padding: 2em 1em;                /* mucho menos padding en móvil */
+    padding: 2em 1em;
+    /* mucho menos padding en móvil */
   }
+
   #sobremi h3 {
     font-size: 1.1em;
   }
+
   #sobremi p {
     font-size: 0.9em;
   }
@@ -500,13 +703,18 @@ main {
 
 @media screen and (max-width: 768px) {
   #proyectos {
-    padding: 2em 1em;              /* menos padding */
+    padding: 2em 1em;
+    /* menos padding */
   }
+
   #proyectos .features {
-    gap: 2em;                      /* menos espacio entre proyectos */
+    gap: 2em;
+    /* menos espacio entre proyectos */
   }
+
   #proyectos article {
-    width: 90%;                    /* ocupa casi toda la pantalla en tablet */
+    width: 90%;
+    /* ocupa casi toda la pantalla en tablet */
   }
 }
 
@@ -514,24 +722,32 @@ main {
   #proyectos {
     padding: 1.5em 0.5em;
   }
+
   #proyectos .features {
     gap: 1em;
   }
+
   #proyectos article {
-    width: 100%;                   /* ancho completo en móvil */
+    width: 100%;
+    /* ancho completo en móvil */
   }
 }
 
 @media screen and (max-width: 768px) {
   #contacto {
-    padding: 2em 1em;                /* menos padding vertical en tablet */
+    padding: 2em 1em;
+    /* menos padding vertical en tablet */
   }
+
   #contacto input,
   #contacto textarea {
-    font-size: 0.95em;               /* texto más compacto */
+    font-size: 0.95em;
+    /* texto más compacto */
   }
+
   #contacto .actions {
-    flex-direction: column;          /* botones uno debajo de otro en tablet */
+    flex-direction: column;
+    /* botones uno debajo de otro en tablet */
     align-items: center;
     gap: 0.5em;
   }
@@ -539,200 +755,288 @@ main {
 
 @media screen and (max-width: 480px) {
   #contacto {
-    padding: 1.5em 0.5em;            /* aún menos padding en móvil */
+    padding: 1.5em 0.5em;
+    /* aún menos padding en móvil */
   }
+
   #contacto input,
   #contacto textarea {
     font-size: 0.9em;
   }
+
   #contacto .actions input {
-    width: 100%;                     /* botones ocupan todo el ancho */
+    width: 100%;
+    /* botones ocupan todo el ancho */
   }
 }
+
 @media screen and (max-width: 480px) {
   #footer .icons {
-    flex-wrap: wrap;           /* permite saltar a varias líneas */
-    gap: 1em;                  /* menos espacio entre iconos */
+    flex-wrap: wrap;
+    /* permite saltar a varias líneas */
+    gap: 1em;
+    /* menos espacio entre iconos */
   }
+
   #footer .icons li a {
-    font-size: 1.2em;          /* iconos un poco más pequeños */
+    font-size: 1.2em;
+    /* iconos un poco más pequeños */
   }
 }
+
 /* ============ MEJORAS VISUALES PROYECTOS ============ */
 
 /* 1. El contenedor del enlace de la imagen */
 /* Necesitamos que sea 'relative' para poder poner cosas 'absolute' dentro */
 .project-image-container {
-    display: block;
-    position: relative;
-    overflow: hidden; /* Para que el zoom no se salga de la caja */
-    border-bottom: 3px solid #ca884a; /* Borde naranja inferior */
+  display: block;
+  position: relative;
+  overflow: hidden;
+  /* Para que el zoom no se salga de la caja */
+  border-bottom: 3px solid #ca884a;
+  /* Borde naranja inferior */
 }
 
 /* 2. La imagen en sí (CONSISTENCIA DE TAMAÑO) */
 .project-thumb {
-    width: 100%;
-    height: 220px;         /* ALTURA FIJA para todas las fotos */
-    object-fit: cover;     /* Recorta la imagen para llenar el hueco sin estirarla */
-    display: block;
-    transition: transform 0.5s ease; /* Suavizado para el zoom */
+  width: 100%;
+  height: 220px;
+  /* ALTURA FIJA para todas las fotos */
+  object-fit: cover;
+  /* Recorta la imagen para llenar el hueco sin estirarla */
+  display: block;
+  transition: transform 0.5s ease;
+  /* Suavizado para el zoom */
 }
 
 /* 3. La capa de texto superpuesto (Overlay) */
 .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* Centrado perfecto del texto */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; /* Espacio entre icono y texto */
-    /* Estilo visual */
-    background-color: rgba(31, 31, 31, 0.85); /* Fondo oscuro semitransparente */
-    color: #ca884a; /* Texto naranja */
-    font-weight: bold;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* Estado inicial: oculto */
-    opacity: 0;
-    transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Centrado perfecto del texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* Espacio entre icono y texto */
+  /* Estilo visual */
+  background-color: rgba(31, 31, 31, 0.85);
+  /* Fondo oscuro semitransparente */
+  color: #ca884a;
+  /* Texto naranja */
+  font-weight: bold;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Estado inicial: oculto */
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 /* ============ EFECTOS HOVER (Al pasar el ratón) ============ */
 
 /* Cuando pasas el ratón por el contenedor, muestra el overlay */
 .project-image-container:hover .image-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* OPCIONAL: Pequeño zoom en la foto de fondo */
 .project-image-container:hover .project-thumb {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* Contenedor del texto */
 .project-content {
-    padding: 1.5em;
+  padding: 1.5em;
 }
 
 /* Descripción del proyecto */
 .project-desc {
-    text-align: justify;
-    font-size: 0.9em;
-    color: #ddd;
-    margin-bottom: 1em;
-    line-height: 1.5;
+  text-align: justify;
+  font-size: 0.9em;
+  color: #ddd;
+  margin-bottom: 1em;
+  line-height: 1.5;
 
 }
 
 /* Contenedor de etiquetas (Badges) */
 .project-tags-container {
-    margin-bottom: 1em;
-    display: flex;
-    flex-wrap: wrap; /* Si hay muchas, bajan de línea */
-    gap: 0.5em;      /* Espacio entre etiquetas */
-	justify-content: center;			/* centrado horizontal */
+  margin-bottom: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  /* Si hay muchas, bajan de línea */
+  gap: 0.5em;
+  /* Espacio entre etiquetas */
+  justify-content: center;
+  /* centrado horizontal */
 
 }
 
 /* La etiqueta individual (Badge) con icono */
 .tech-tag {
-    display: inline-flex;       /* Usamos flex para alinear icono y texto */
-    align-items: center;        /* Centrado vertical perfecto */
-    gap: 6px;                   /* Espacio entre el icono y el texto */
-    background-color: rgba(202, 136, 74, 0.1); /* Fondo naranja muy clarito y transparente */
-    color: #ca884a;             /* Texto e icono en naranja corporativo */
-    border: 1px solid #ca884a;  /* Borde naranja */
-    padding: 4px 10px;          /* Un poco más de relleno */
-    border-radius: 20px;        /* Bordes más redondeados (tipo píldora) queda más moderno */
-    font-size: 0.8em;           /* Tamaño de letra */
-    font-weight: bold;
-    font-family: 'Roboto Mono', monospace; /* Toque tech si tienes la fuente */
-    transition: all 0.3s ease;
+  display: inline-flex;
+  /* Usamos flex para alinear icono y texto */
+  align-items: center;
+  /* Centrado vertical perfecto */
+  gap: 6px;
+  /* Espacio entre el icono y el texto */
+  background-color: rgba(202, 136, 74, 0.1);
+  /* Fondo naranja muy clarito y transparente */
+  color: #ca884a;
+  /* Texto e icono en naranja corporativo */
+  border: 1px solid #ca884a;
+  /* Borde naranja */
+  padding: 4px 10px;
+  /* Un poco más de relleno */
+  border-radius: 20px;
+  /* Bordes más redondeados (tipo píldora) queda más moderno */
+  font-size: 0.8em;
+  /* Tamaño de letra */
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  /* Toque tech si tienes la fuente */
+  transition: all 0.3s ease;
 }
 
 /* Efecto opcional al pasar el ratón */
 .tech-tag:hover {
-    background-color: #ca884a;
-    color: #1f1f1f; /* Texto oscuro sobre fondo naranja */
+  background-color: #ca884a;
+  color: #1f1f1f;
+  /* Texto oscuro sobre fondo naranja */
 }
 
 /* Barra inferior de botones */
 .project-actions {
-    margin-top: 1.5em;
-    border-top: 1px solid #444; /* Línea separadora sutil */
-    padding-top: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: auto;
+  border-top: 1px solid #444;
+  /* Línea separadora sutil */
+  padding-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Enlace normal (Código GitHub) */
 .link-code {
-    font-size: 1;
-    color: #fff;
-    align-items: center;
-    gap: 5px;
-    transition: color 0.3s;
-	
+  font-size: 1;
+  color: #fff;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+
 }
+
 .link-code:hover {
-    color: #e47712;
+  color: #e47712;
 }
 
 /* Botón destacado (Demo) */
 .btn-demo {
-    background-color: #1f1f1f;
-    color: #1f1f1f; /* Texto oscuro para contraste */
-    padding: 5px 12px;
-    border-radius: 4px;
-    font-size: 0.85em;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    transition: background-color 0.3s;
+  background-color: #1f1f1f;
+  color: #1f1f1f;
+  /* Texto oscuro para contraste */
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s;
 }
+
 .btn-demo:hover {
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
-}/* Estilo base de la etiqueta */
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilo base de la etiqueta */
 .lang-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    border-radius: 12px; /* Bordes redondeados */
-    font-size: 0.8em;
-    font-weight: bold;
-    font-family: 'Roboto Mono', monospace;
-    margin-right: 5px;
-    border: 1px solid transparent; /* Para que el borde no baile */
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  /* Bordes redondeados */
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: 'Roboto Mono', monospace;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  /* Para que el borde no baile */
 }
 
 /* COLORES OFICIALES GITHUB */
 
 /* PHP (Azul Oscuro) */
 .tag-php {
-    background-color: rgba(79, 93, 149, 0.2); /* Fondo transparente */
-    color: #8c9eff; /* Texto azul claro brillante */
-    border-color: #4F5D95;
+  background-color: rgba(79, 93, 149, 0.2);
+  /* Fondo transparente */
+  color: #8c9eff;
+  /* Texto azul claro brillante */
+  border-color: #4F5D95;
 }
 
 /* CSS (Morado) */
 .tag-css {
-    background-color: rgba(86, 61, 124, 0.2);
-    color: #c792ea; /* Texto morado claro */
-    border-color: #563D7C;
+  background-color: rgba(86, 61, 124, 0.2);
+  color: #c792ea;
+  /* Texto morado claro */
+  border-color: #563D7C;
 }
 
 /* JavaScript (Amarillo) */
 .tag-js {
-    background-color: rgba(241, 224, 90, 0.2);
-    color: #f1e05a; /* Amarillo intenso */
-    border-color: #f1e05a;
+  background-color: rgba(241, 224, 90, 0.2);
+  color: #f1e05a;
+  /* Amarillo intenso */
+  border-color: #f1e05a;
+}
+
+/* --- COLORES PARA WORDLE JAVA --- */
+
+/* JAVA (Rojo Anaranjado - Color oficial) */
+.tag-java {
+  background-color: rgba(224, 93, 68, 0.2);
+  color: #e05d44;
+  border-color: #e05d44;
+}
+
+/* CLI / CONSOLA (Verde Terminal - Estilo Matrix) */
+.tag-cli {
+  background-color: rgba(76, 175, 80, 0.2);
+  /* Verde suave de fondo */
+  color: #4caf50;
+  /* Verde terminal brillante */
+  border-color: #4caf50;
+}
+
+/* ALGORITMIA (Turquesa / Cyan - Lógica y Cálculo) */
+.tag-algo {
+  background-color: rgba(0, 188, 212, 0.2);
+  /* Azul hielo fondo */
+  color: #26c6da;
+  /* Turquesa brillante */
+  border-color: #26c6da;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  /* <--- ESTO es clave: estira los hijos */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  /* Apila los elementos verticalmente */
+  height: 100%;
+  /* Ocupa toda la altura que le da el padre */
+  /* Asegúrate de que tus tarjetas tengan un fondo definido para ver el efecto */
+  /* background: #2a2b33; por ejemplo, si no lo tienen ya */
 }
