@@ -1059,3 +1059,20 @@ article {
         gap: 2em;
     }
 }
+/* Estilos para la lista de Sobre Mí */
+.about-list {
+    max-width: 800px;
+    margin: 0 auto 2em auto; /* Centrado igual que los párrafos */
+    padding-left: 2em; /* Espacio para los puntos */
+    text-align: left; /* Alineamos a la izquierda para facilitar la lectura */
+    color: #eaeaea;
+    line-height: 1.8;
+}
+
+.about-list li {
+    margin-bottom: 0.8em; /* Separación entre los puntos */
+}
+
+.about-list strong {
+    color: #ca884a; /* Tu naranja corporativo para destacar las palabras clave */
+}
