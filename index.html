@@ -12,44 +12,47 @@
 
 <body class="is-preload">
 
-	<!-- Header -->
-	<header id="header">
-		<div class="logo">
-			César Betancor<span>Full Stack Developer & Data Engineering</span>
-		</div>
-		<nav id="nav">
-			<ul>
-				<li><a href="#sobremi" class="active">Sobre mí</a></li>
-				<li><a href="#proyectos">Proyectos</a></li>
-				<li><a href="#contacto">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<!-- Nav Menu -->
+	<nav id="menu">
+		<ul>
+			<li><a href="#hero" class="btn-home">Home</a></li>
+			<li><a href="#sobremi">Sobre mí</a></li>
+			<li><a href="#proyectos">Proyectos</a></li>
+			<li><a href="#contacto">Contacto</a></li>
+		</ul>
+	</nav>
 
 	<!-- Wrapper -->
 	<div id="wrapper">
 
 		<!-- Main -->
 		<main id="main">
-			<section id="logo">
-				<h1><strong>César Betancor</strong></h1>
-				<h2>Desarrollador Web (DAW) & Técnico de Sistemas | Backend Developer</h2>
-				<p>Aporto 16 años de experiencia en gestión y eficiencia operativa aplicados al desarrollo de software.
-					Código con mentalidad resolutiva.</p>
-				<p>Tecnologías que uso:</p>
-				<div class="tecnologias">
-					<i class="fab fa-java" data-tooltip="Java"></i>
-					<i class="fab fa-html5" data-tooltip="HTML5"></i>
-					<i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
-					<i class="fab fa-js" data-tooltip="JavaScript"></i>
-					<i class="fab fa-bootstrap" data-tooltip="Bootstrap"></i>
-					<i class="fab fa-github" data-tooltip="GitHub"></i>
-					<i class="fab fa-php" data-tooltip="php"></i>
-					<i class="fa-solid fa-database" data-tooltip="SQL / MySQL"></i>
-					<i class="fa-solid fa-snowflake" data-tooltip="Snowflake"></i>
-					<i class="fa-solid fa-cubes" data-tooltip="dbt"></i>
-				</div>
-			</section>
+			<div class="inner">
+				<section id="hero" class="hero-section">
+					<div class="hero-content">
+						<div class="hero-text">
+							<h1 class="animate-fade-up delay-1">César Betancor</h1>
+							<h2 class="animate-fade-up delay-2">Full Stack Developer | Data Engineering Enthusiast <br> Optimizing processes from logistics to data pipelines</h2>
+							<p class="animate-fade-up delay-3">Tecnologías que uso:</p>
+							<div class="tecnologias animate-fade-up delay-3">
+								<i class="fab fa-java" data-tooltip="Java"></i>
+								<i class="fab fa-html5" data-tooltip="HTML5"></i>
+								<i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
+								<i class="fab fa-js" data-tooltip="JavaScript"></i>
+								<i class="fab fa-bootstrap" data-tooltip="Bootstrap"></i>
+								<i class="fab fa-github" data-tooltip="GitHub"></i>
+								<i class="fab fa-php" data-tooltip="php"></i>
+								<i class="fa-solid fa-database" data-tooltip="SQL / MySQL"></i>
+								<i class="fa-solid fa-snowflake" data-tooltip="Snowflake"></i>
+								<i class="fa-solid fa-cubes" data-tooltip="dbt"></i>
+							</div>
+						</div>
+						<div class="hero-image">
+							<img src="images/avatar.jpg" alt="Foto de César Betancor" class="profile-avatar animate-fade-up">
+						</div>
+					</div>
+				</section>
+			</div>
 			<!-- Sobre mí -->
 			<section id="sobremi">
 				<h3>Sobre mí</h3>
@@ -62,7 +65,7 @@
 				</p>
 
 				<div class="cv-action">
-					<a href="assets/doc/CV_Cesar_Betancor_Cano.pdf" target="_blank" class="btn-download">
+					<a href="assets/doc/CV_Cesar_Betancor_Cano.pdf" target="_blank" class="btn-outline">
 						<i class="fa-solid fa-file-pdf"></i> Descargar CV
 					</a>
 				</div>
@@ -161,13 +164,13 @@
 					<form method="post" action="https://formsubmit.co/betancor13@gmail.com">
 						<div class="row gtr-uniform">
 							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
-									placeholder="Nombre" /></div>
+									placeholder="Nombre" aria-label="Tu nombre" required /></div>
 							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
-									placeholder="Email" /></div>
-							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto" />
+									placeholder="Email" aria-label="Tu email" required /></div>
+							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto" aria-label="Asunto del mensaje" required />
 							</div>
 							<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje"
-									rows="6"></textarea></div>
+									rows="6" aria-label="Tu mensaje" required></textarea></div>
 							<div class="col-12">
 								<ul class="actions">
 									<li><input type="submit" class="primary" value="Enviar" /></li>
@@ -197,6 +200,30 @@
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
+	<script>
+		// Tarea 1: Scroll Observer para el menú activo
+		document.addEventListener('DOMContentLoaded', () => {
+			const sections = document.querySelectorAll('main section[id]');
+			const navLinks = document.querySelectorAll('#menu ul li a');
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						navLinks.forEach(link => {
+							link.classList.remove('active');
+							if (link.getAttribute('href').substring(1) === entry.target.id) {
+								link.classList.add('active');
+							}
+						});
+					}
+				});
+			}, { rootMargin: '-50% 0px -50% 0px' }); // Se activa cuando la sección está en el centro de la pantalla
+
+			sections.forEach(section => {
+				observer.observe(section);
+			});
+		});
+	</script>
 </body>
 
 </html>
