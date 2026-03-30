@@ -15,183 +15,198 @@
 	<!-- Nav Menu -->
 	<nav id="menu">
 		<ul>
-			<li><a href="#hero" class="btn-home">Home</a></li>
+			<li><a href="#hero" class="active">Home</a></li>
 			<li><a href="#sobremi">Sobre mí</a></li>
 			<li><a href="#proyectos">Proyectos</a></li>
-			<li><a href="#contacto">Contacto</a></li>
+			<li><a href="#contacto" class="nav-cta">Contacto</a></li>
 		</ul>
 	</nav>
 
-	<!-- Wrapper -->
 	<div id="wrapper">
-
-		<!-- Main -->
 		<main id="main">
 			<div class="inner">
 				<section id="hero" class="hero-section">
 					<div class="hero-content">
-						<div class="hero-text">
-							<h1 class="animate-fade-up delay-1">César Betancor</h1>
-							<h2 class="animate-fade-up delay-2">Full Stack Developer | Data Engineering Enthusiast <br> Optimizing processes from logistics to data pipelines</h2>
-							<p class="animate-fade-up delay-3">Tecnologías que uso:</p>
-							<div class="tecnologias animate-fade-up delay-3">
-								<i class="fab fa-java" data-tooltip="Java"></i>
-								<i class="fab fa-html5" data-tooltip="HTML5"></i>
-								<i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
-								<i class="fab fa-js" data-tooltip="JavaScript"></i>
-								<i class="fab fa-bootstrap" data-tooltip="Bootstrap"></i>
-								<i class="fab fa-github" data-tooltip="GitHub"></i>
-								<i class="fab fa-php" data-tooltip="php"></i>
-								<i class="fa-solid fa-database" data-tooltip="SQL / MySQL"></i>
-								<i class="fa-solid fa-snowflake" data-tooltip="Snowflake"></i>
-								<i class="fa-solid fa-cubes" data-tooltip="dbt"></i>
+						<div class="hero-top">
+							<div class="hero-text">
+								<h1 class="animate-fade-up">César Betancor</h1>
+								<h2 class="animate-fade-up delay-1">
+									<span class="job-title">Full Stack Developer & Data Engineering</span>
+									<br>
+									<span class="hero-desc">Optimizando <span class="text-accent">procesos</span> y
+										<span class="text-accent">datos</span> para negocio real</span>
+								</h2>
+
+								<div class="cv-action">
+									<a href="assets/doc/CV_Cesar_Betancor_Cano.pdf" target="_blank" class="btn-outline">
+										<i class="fa-solid fa-file-pdf"></i> Descargar CV
+									</a>
+								</div>
+							</div>
+
+							<div class="hero-image">
+								<img src="images/avatar.jpg" alt="Foto de César Betancor"
+									class="profile-avatar animate-fade-up">
 							</div>
 						</div>
-						<div class="hero-image">
-							<img src="images/avatar.jpg" alt="Foto de César Betancor" class="profile-avatar animate-fade-up">
+
+						<div class="hero-bottom animate-fade-up delay-3">
+							<h3>Stack Tecnológico</h3>
+								<div class="tech-container">
+									<div class="tecnologias">
+										<i class="fab fa-java" data-tooltip="Java"></i>
+										<i class="fab fa-js" data-tooltip="JavaScript"></i>
+										<i class="fab fa-php" data-tooltip="PHP"></i>
+										<i class="fab fa-html5" data-tooltip="HTML5"></i>
+										<i class="fab fa-bootstrap" data-tooltip="Bootstrap"></i>
+										<i class="fab fa-css3-alt" data-tooltip="CSS3"></i>
+										<i class="fa-solid fa-database" data-tooltip="SQL / MySQL"></i>
+										<i class="fa-solid fa-snowflake" data-tooltip="Snowflake"></i>
+										<i class="fa-solid fa-cubes" data-tooltip="dbt"></i>
+										<i class="fab fa-github" data-tooltip="GitHub"></i>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</section>
 			</div>
-			<!-- Sobre mí -->
-			<section id="sobremi">
-				<h3>Sobre mí</h3>
+		</main>
+	</div>
+	<!-- Sobre mí -->
+	<section id="sobremi">
+		<h3>Sobre mí</h3>
 
-				<p>
-					Durante 16 años como Encargado General en logística, me dediqué a optimizar operaciones complejas 
-					y gestionar flujos de stock críticos. Me di cuenta de que la clave para la eficiencia operativa son
-					 los datos. Hoy, traduzco esa experiencia del mundo físico al código: diseño bases de datos robustas, 
-					 desarrollo pipelines de datos y creo aplicaciones Full Stack que resuelven problemas de negocio reales.
-				</p>
+		<p>
+			Durante 16 años como Encargado General en logística, me dediqué a optimizar operaciones complejas
+			y gestionar flujos de stock críticos. Me di cuenta de que la clave para la eficiencia operativa son
+			los datos. Hoy, traduzco esa experiencia del mundo físico al código: diseño bases de datos robustas,
+			desarrollo pipelines de datos y creo aplicaciones Full Stack que resuelven problemas de negocio reales.
+		</p>
 
-				<div class="cv-action">
-					<a href="assets/doc/CV_Cesar_Betancor_Cano.pdf" target="_blank" class="btn-outline">
-						<i class="fa-solid fa-file-pdf"></i> Descargar CV
+
+	</section>
+
+	<!-- Proyectos -->
+	<section id="proyectos">
+		<div class="container">
+			<h3>Proyectos</h3>
+			<p>Una colección de desarrollos personales donde aplico lógica, arquitectura y nuevas tecnologías.
+			</p>
+			<div class="features">
+				<article>
+					<a href="https://tienda-drop5.great-site.net/" class="image" target="_blank">
+						<img src="images/tienda.jpg" alt="Drop 5 E-Commerce" class="project-thumb" />
 					</a>
-				</div>
-			</section>
 
-			<!-- Proyectos -->
-			<section id="proyectos">
-				<div class="container">
-					<h3>Proyectos</h3>
-					<p>Una colección de desarrollos personales donde aplico lógica, arquitectura y nuevas tecnologías.
-					</p>
-					<div class="features">
-						<article>
-							<a href="https://tienda-drop5.great-site.net/" class="image" target="_blank">
-								<img src="images/tienda.jpg" alt="Drop 5 E-Commerce" class="project-thumb" />
+					<div class="project-content">
+						<h4>Drop 5: E-commerce</h4>
+
+						<p class="project-desc">
+							Plataforma de ventas "Flash" con control de stock crítico. Desarrollo Full Stack
+							enfocado en rendimiento, seguridad y conversión de usuario.
+						</p>
+						<div class="project-tags-container">
+							<span class="lang-tag tag-php">
+								<i class="fab fa-php"></i> PHP 70.7%
+							</span>
+
+							<span class="lang-tag tag-css">
+								<i class="fab fa-css3-alt"></i> CSS 26.7%
+							</span>
+
+							<span class="lang-tag tag-js">
+								<i class="fab fa-js"></i> JS 2.6%
+							</span>
+						</div>
+
+						<div class="project-actions">
+							<a href="https://github.com/Btncr13/tienda_enfoque" target="_blank" class="link-code">
+								<i class="fab fa-github"></i> Código
 							</a>
+						</div>
+					</div>
+				</article>
 
-							<div class="project-content">
-								<h4>Drop 5: E-commerce</h4>
+				<article>
+					<a href="https://github.com/Btncr13/Wordle/" class="image" target="_blank">
+						<img src="images/wordle-java.jpg" alt="Consola Java Eclipse" class="project-thumb" />
+					</a>
 
-								<p class="project-desc">
-									Plataforma de ventas "Flash" con control de stock crítico. Desarrollo Full Stack
-									enfocado en rendimiento, seguridad y conversión de usuario.
-								</p>
-								<div class="project-tags-container">
-									<span class="lang-tag tag-php">
-										<i class="fab fa-php"></i> PHP 70.7%
-									</span>
+					<div class="project-content">
+						<h4>Wordle Logic (Java Nativo)</h4>
 
-									<span class="lang-tag tag-css">
-										<i class="fab fa-css3-alt"></i> CSS 26.7%
-									</span>
+						<p class="project-desc">
+							Motor lógico desarrollado en consola. Creacion del
+							algoritmo de comparación de Strings
+							para validar letras y gestionar el
+							bucle del juego.
+						</p>
+						<div class="project-tags-container">
+							<span class="lang-tag tag-java">
+								<i class="fab fa-java"></i> Java 100%
+							</span>
 
-									<span class="lang-tag tag-js">
-										<i class="fab fa-js"></i> JS 2.6%
-									</span>
-								</div>
+							<span class="lang-tag tag-cli">
+								<i class="fas fa-terminal"></i> Consola/CLI
+							</span>
 
-								<div class="project-actions">
-									<a href="https://github.com/Btncr13/tienda_enfoque" target="_blank"
-										class="link-code">
-										<i class="fab fa-github"></i> Código
-									</a>
-								</div>
-							</div>
-						</article>
+							<span class="lang-tag tag-algo">
+								<i class="fas fa-brain"></i> Algoritmia
+							</span>
+						</div>
 
-						<article>
-							<a href="https://github.com/Btncr13/Wordle/" class="image" target="_blank">
-								<img src="images/wordle-java.jpg" alt="Consola Java Eclipse" class="project-thumb" />
+						<div class="project-actions">
+							<a href="https://github.com/Btncr13/Wordle" target="_blank" class="link-code">
+								<i class="fab fa-github"></i> Código
 							</a>
+						</div>
+					</div>
+				</article>
 
-							<div class="project-content">
-								<h4>Wordle Logic (Java Nativo)</h4>
+			</div>
+		</div>
+	</section>
 
-								<p class="project-desc">
-									Motor lógico desarrollado  en consola. Creacion del
-									algoritmo de comparación de Strings
-									para validar letras y gestionar el
-									bucle del juego.
-								</p>
-								<div class="project-tags-container">
-									<span class="lang-tag tag-java">
-										<i class="fab fa-java"></i> Java 100%
-									</span>
-
-									<span class="lang-tag tag-cli">
-										<i class="fas fa-terminal"></i> Consola/CLI
-									</span>
-
-									<span class="lang-tag tag-algo">
-										<i class="fas fa-brain"></i> Algoritmia
-									</span>
-								</div>
-
-								<div class="project-actions">
-									<a href="https://github.com/Btncr13/Wordle" target="_blank"
-										class="link-code">
-										<i class="fab fa-github"></i> Código
-									</a>
-								</div>
-							</div>
-						</article>
-
+	<!-- Contacto -->
+	<section id="contacto">
+		<div class="container">
+			<h3>Contacto</h3>
+			<p>Puedes contactar conmigo en el correo <a href="mailto:betancor13@gmail.com">betancor13@gmail.com</a> o a
+				través del siguiente
+				formulario de contacto:</p>
+			<form method="post" action="https://formsubmit.co/betancor13@gmail.com">
+				<div class="row gtr-uniform">
+					<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Nombre"
+							aria-label="Tu nombre" required /></div>
+					<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email"
+							aria-label="Tu email" required /></div>
+					<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto"
+							aria-label="Asunto del mensaje" required />
+					</div>
+					<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje" rows="6"
+							aria-label="Tu mensaje" required></textarea></div>
+					<div class="col-12">
+						<ul class="actions">
+							<li><input type="submit" class="primary" value="Enviar" /></li>
+							<li><input type="reset" value="Borrar" /></li>
+						</ul>
 					</div>
 				</div>
-			</section>
+			</form>
+		</div>
+	</section>
+	</main>
 
-			<!-- Contacto -->
-			<section id="contacto">
-				<div class="container">
-					<h3>Contacto</h3>
-					<p>Puedes contactar conmigo en el correo <a
-							href="mailto:betancor13@gmail.com">betancor13@gmail.com</a> o a través del siguiente
-						formulario de contacto:</p>
-					<form method="post" action="https://formsubmit.co/betancor13@gmail.com">
-						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
-									placeholder="Nombre" aria-label="Tu nombre" required /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
-									placeholder="Email" aria-label="Tu email" required /></div>
-							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto" aria-label="Asunto del mensaje" required />
-							</div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje"
-									rows="6" aria-label="Tu mensaje" required></textarea></div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" class="primary" value="Enviar" /></li>
-									<li><input type="reset" value="Borrar" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
-		</main>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<ul class="icons">
-				<li><a href="https://github.com/Btncr13"><i class="fa-brands fa-github"></i></a></li>
-				<li><a href="mailto:betancor13@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
-				<li><a href="https://www.linkedin.com/in/cesarbetancorcano/"><i class="fa-brands fa-linkedin"></i></a>
-				</li>
-			</ul>
-		</footer>
+	<!-- Footer -->
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="https://github.com/Btncr13"><i class="fa-brands fa-github"></i></a></li>
+			<li><a href="mailto:betancor13@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/cesarbetancorcano/"><i class="fa-brands fa-linkedin"></i></a>
+			</li>
+		</ul>
+	</footer>
 	</div>
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
