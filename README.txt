@@ -4,7 +4,7 @@
 
 Bienvenidos al repositorio de mi portfolio web personal. Este proyecto ha sido diseñado y desarrollado desde cero con un enfoque en rendimiento, accesibilidad y una experiencia de usuario (UX/UI) moderna basada en *Dark Mode*.
 
-🔗 **[Ver Portfolio en vivo](https://btncr13.github.io/portfolio/)**
+🔗 [Ver Portfolio en vivo] https://btncr13.github.io/portfolio/
 
 ---
 
