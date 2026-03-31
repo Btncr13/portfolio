@@ -7,10 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
 </head>
 
-<body class="is-preload">
+<body>
 
 	<!-- Nav Menu -->
 	<nav id="menu">
@@ -24,33 +23,39 @@
 
 	<div id="wrapper">
 		<main id="main">
-			<div class="inner">
 				<section id="hero" class="hero-section">
 					<div class="hero-content">
 						<div class="hero-top">
 							<div class="hero-text">
-								<h1 class="animate-fade-up">César Betancor</h1>
-								<h2 class="animate-fade-up delay-1">
-									<span class="job-title">Full Stack Developer & Data Engineering</span>
+								<h1>César Betancor</h1>
+								<h2>
+									<span>Full Stack Developer & Data Engineering</span>
 									<br>
 									<span class="hero-desc">Optimizando <span class="text-accent">procesos</span> y
 										<span class="text-accent">datos</span> para negocio real</span>
 								</h2>
 
-								<div class="cv-action">
+								<div class="hero-actions">
 									<a href="assets/doc/CV_Cesar_Betancor_Cano.pdf" target="_blank" class="btn-outline">
-										<i class="fa-solid fa-file-pdf"></i> Descargar CV
+										<i class="fa-solid fa-file-pdf"></i> Ver CV
 									</a>
+									<div class="hero-actions-divider"></div>
+									<div class="hero-social-icons">
+										<a href="https://github.com/Btncr13" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+										<a href="https://www.linkedin.com/in/cesarbetancorcano/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+										<a href="mailto:betancor13@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i>
+</a>
+									</div>
 								</div>
 							</div>
 
 							<div class="hero-image">
 								<img src="images/avatar.jpg" alt="Foto de César Betancor"
-									class="profile-avatar animate-fade-up">
+									class="profile-avatar">
 							</div>
 						</div>
 
-						<div class="hero-bottom animate-fade-up delay-3">
+						<div class="hero-bottom">
 							<h3>Stack Tecnológico</h3>
 							<div class="tech-container">
 								<div class="tecnologias">
@@ -68,8 +73,8 @@
 							</div>
 						</div>
 					</div>
-			</div>
 			</section>
+
 			<!-- Sobre mí -->
 			<section id="sobremi">
 				<div class="container">
@@ -111,8 +116,9 @@
 					</p>
 					<div class="features">
 						<article>
-							<a href="https://tienda-drop5.great-site.net/" class="image" target="_blank">
+							<a href="https://tienda-drop5.great-site.net/" class="project-image-container" target="_blank">
 								<img src="images/tienda.jpg" alt="Drop 5 E-Commerce" class="project-thumb" />
+								<div class="image-overlay"><i class="fas fa-external-link-alt"></i> Ver Proyecto</div>
 							</a>
 
 							<div class="project-content">
@@ -146,8 +152,9 @@
 						</article>
 
 						<article>
-							<a href="https://github.com/Btncr13/Wordle/" class="image" target="_blank">
+							<a href="https://github.com/Btncr13/Wordle/" class="project-image-container" target="_blank">
 								<img src="images/wordle-java.jpg" alt="Consola Java Eclipse" class="project-thumb" />
+								<div class="image-overlay"><i class="fas fa-code"></i> Ver Código</div>
 							</a>
 
 							<div class="project-content">
@@ -194,17 +201,16 @@
 						través del siguiente
 						formulario de contacto:</p>
 					<form method="post" action="https://formsubmit.co/betancor13@gmail.com">
-						<div class="row gtr-uniform">
-							<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name"
+						<div>
+							<div><input type="text" name="name" id="name"
 									placeholder="Nombre" aria-label="Tu nombre" required /></div>
-							<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email"
+							<div><input type="email" name="email" id="email"
 									placeholder="Email" aria-label="Tu email" required /></div>
-							<div class="col-12"><input type="text" name="subject" id="subject" placeholder="Asunto"
-									aria-label="Asunto del mensaje" required />
-							</div>
-							<div class="col-12"><textarea name="message" id="message" placeholder="Mensaje" rows="6"
+							<div><input type="text" name="subject" id="subject" placeholder="Asunto"
+									aria-label="Asunto del mensaje" required /></div>
+							<div><textarea name="message" id="message" placeholder="Mensaje" rows="6"
 									aria-label="Tu mensaje" required></textarea></div>
-							<div class="col-12">
+							<div>
 								<ul class="actions">
 									<li><input type="submit" class="primary" value="Enviar" /></li>
 									<li><input type="reset" value="Borrar" /></li>
@@ -226,13 +232,6 @@
 			</ul>
 		</footer>
 	</div>
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			// 1. Observer para marcar el menú activo (Tu código original)
