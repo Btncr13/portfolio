@@ -1021,6 +1021,50 @@ main {
   border-color: #26c6da;
 }
 
+/* --- COLORES PARA DATA ENGINEERING --- */
+
+/* Python (Azul) */
+.tag-python {
+  background-color: rgba(48, 105, 152, 0.2);
+  color: #5a9fd4;
+  border-color: #306998;
+}
+
+/* Snowflake (Azul Claro) */
+.tag-snowflake {
+  background-color: rgba(41, 181, 232, 0.2);
+  color: #29b5e8;
+  border-color: #29b5e8;
+}
+
+/* dbt (Naranja) */
+.tag-dbt {
+  background-color: rgba(255, 105, 75, 0.2);
+  color: #ff694b;
+  border-color: #ff694b;
+}
+
+/* Power BI (Amarillo) */
+.tag-powerbi {
+  background-color: rgba(242, 200, 17, 0.2);
+  color: #f2c811;
+  border-color: #f2c811;
+}
+
+/* SQL (Azul Claro) */
+.tag-sql {
+  background-color: rgba(0, 162, 199, 0.2);
+  color: #00a2c7;
+  border-color: #00a2c7;
+}
+
+/* MariaDB (Beige / Marrón suave) */
+.tag-mariadb {
+  background-color: rgba(204, 153, 102, 0.2);
+  color: #cc9966;
+  border-color: #cc9966;
+}
+
 /* --- GRUPOS DE TECNOLOGÍAS (UX: Categorización) --- */
 .tech-container {
     display: flex;
